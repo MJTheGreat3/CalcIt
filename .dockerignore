@@ -1,0 +1,26 @@
+# Build output and local tooling
+target/
+.mvn/
+mvnw
+mvnw.cmd
+
+# VCS, IDE and OS files
+.git/
+.gitignore
+.gitattributes
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Deployment and CI files are not needed inside the image
+Dockerfile
+.dockerignore
+docker-compose.yml
+Jenkinsfile
+nginx/
+
+# Docs and secrets
+*.md
+.env
+.env.*
