@@ -3,6 +3,11 @@
 CalcIt is a RESTful calculator API built with Java 21, Spring Boot and Maven, delivered through an
 automated CI/CD pipeline: GitHub → Jenkins → Docker Hub → Docker Compose.
 
+## Live Deployment
+
+The Jenkins pipeline deploys the stack locally; the API is served through the Nginx proxy at
+`http://localhost:8081` (health: `http://localhost:8081/actuator/health`).
+
 ## API
 
 All operations take two numeric query parameters, `a` and `b`, and return JSON.
